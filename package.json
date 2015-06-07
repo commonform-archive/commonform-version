@@ -8,7 +8,6 @@
     "semver": "^4.2.0"
   },
   "devDependencies": {
-    "check-versions": "^1.0.0",
     "commonform-hash": "^0.4.0",
     "covert": "~1.1.0",
     "jscs": "^1.10.0",
@@ -27,10 +26,9 @@
   "main": "source/index",
   "repository": "commonform/commonform-hash",
   "scripts": {
-    "check": "check-versions --check-module",
     "coverage": "covert test/*.test.js",
     "lint": "jshint source test && jscs source test",
-    "precommit": "npm run check && npm run lint && npm run coverage",
+    "precommit": "npm run lint && npm run coverage",
     "test": "tape test/*.test.js"
   }
 }

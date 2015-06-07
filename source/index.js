@@ -6,5 +6,3 @@ module.exports = function(argument) {
     semver.clean(argument) === argument
   );
 };
-
-module.exports.version = '1.0.0';
